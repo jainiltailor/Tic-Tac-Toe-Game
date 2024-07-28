@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="entry-page">
+        <h1>Welcome to Tic-Tac-Toe</h1>
+        <div class="mode-selection">
+            <label>
+                <input type="radio" name="mode" value="friends" checked> Play with Friends
+            </label>
+            <label>
+                <input type="radio" name="mode" value="ai"> Play with AI
+            </label>
+        </div>
+        <div class="players">
+            <input type="text" id="player1Name" placeholder="Player 1 Name">
+            <input type="text" id="player2Name" placeholder="Player 2 Name">
+        </div>
+        <button id="startBtn">Start Game</button>
+    </div>
+
+    <div class="tic-tac-toe hidden">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="board" id="board">
+            <div class="row">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+            </div>
+            <div class="row">
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+            </div>
+            <div class="row">
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+        </div>
+        <button id="resetBtn">Reset</button>
+        <div class="message" id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
